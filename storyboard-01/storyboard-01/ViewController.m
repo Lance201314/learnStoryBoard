@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 Lance Lan. All rights reserved.
 //
 
+
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -25,6 +26,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)touchButton:(UIButton *)sender {
+    if ([[sender titleForState:UIControlStateNormal] isEqual:@"b"]) {
+        [sender setTitle:@"test button info" forState:UIControlStateNormal];
+    } else {
+        [sender setTitle:@"b" forState:UIControlStateNormal];
+    }
 }
 
 @end
