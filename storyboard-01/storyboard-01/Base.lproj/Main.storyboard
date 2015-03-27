@@ -1,40 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="cGC-jO-Y98">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cGC-jO-Y98">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--first-->
         <scene sceneID="tOO-FK-H7M">
             <objects>
                 <viewController id="iQl-CL-wnd" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fim-j7-a1j"/>
+                        <viewControllerLayoutGuide type="bottom" id="JXT-Rm-6EO"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bLF-GK-GaM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="Uev-5l-bGN">
-                                <rect key="frame" x="20" y="84" width="130" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.68782350059999997" blue="0.35971051440000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="5at-Zx-PZA">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5at-Zx-PZA">
                                 <rect key="frame" x="170" y="84" width="130" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.70676984330000003" green="0.51180597210000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" id="dHB-fX-aU2">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHB-fX-aU2">
                                 <rect key="frame" x="20" y="304" width="280" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.02294027383" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uev-5l-bGN">
+                                <rect key="frame" x="20" y="84" width="130" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.68782350059999997" blue="0.35971051440000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dHB-fX-aU2" firstAttribute="leading" secondItem="bLF-GK-GaM" secondAttribute="leadingMargin" constant="4" id="7hm-Ot-Lqh"/>
+                            <constraint firstItem="Uev-5l-bGN" firstAttribute="top" secondItem="Fim-j7-a1j" secondAttribute="bottom" constant="20" id="DUu-rx-VFi"/>
+                            <constraint firstItem="5at-Zx-PZA" firstAttribute="top" secondItem="Fim-j7-a1j" secondAttribute="bottom" constant="20" id="UCC-Ic-a53"/>
+                            <constraint firstItem="dHB-fX-aU2" firstAttribute="top" secondItem="Uev-5l-bGN" secondAttribute="bottom" constant="20" id="Xf6-d5-a0J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5at-Zx-PZA" secondAttribute="trailing" constant="4" id="Y7Y-X6-lDp"/>
+                            <constraint firstItem="5at-Zx-PZA" firstAttribute="leading" secondItem="Uev-5l-bGN" secondAttribute="trailing" constant="20" id="Z9s-Dx-2X2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dHB-fX-aU2" secondAttribute="trailing" constant="4" id="arn-1B-7BD"/>
+                            <constraint firstItem="5at-Zx-PZA" firstAttribute="width" secondItem="Uev-5l-bGN" secondAttribute="width" id="dn5-zv-ts7"/>
+                            <constraint firstItem="Uev-5l-bGN" firstAttribute="leading" secondItem="bLF-GK-GaM" secondAttribute="leadingMargin" constant="4" id="jAH-MA-zxt"/>
+                            <constraint firstItem="JXT-Rm-6EO" firstAttribute="top" secondItem="dHB-fX-aU2" secondAttribute="bottom" constant="64" id="lrk-bl-FtR"/>
+                            <constraint firstItem="dHB-fX-aU2" firstAttribute="height" secondItem="Uev-5l-bGN" secondAttribute="height" id="w1h-em-APg"/>
+                            <constraint firstItem="dHB-fX-aU2" firstAttribute="height" secondItem="5at-Zx-PZA" secondAttribute="height" id="xft-Pn-8NW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="first" id="9zg-tv-qZV">
                         <barButtonItem key="rightBarButtonItem" title="next" id="JTx-m3-wtl">
                             <connections>
-                                <segue destination="mQJ-vM-uxh" kind="push" id="ASg-8t-2SM"/>
+                                <segue destination="mQJ-vM-uxh" kind="show" id="ASg-8t-2SM"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -48,12 +64,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1L-20-x3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-109" y="147"/>
+            <point key="canvasLocation" x="-404" y="183"/>
         </scene>
         <!--second-->
         <scene sceneID="Gd2-Ns-bZE">
             <objects>
                 <viewController id="mQJ-vM-uxh" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wT3-TE-PSZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ide-om-J8e"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TeF-2e-dCs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nfw-8c-uwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="282" y="147"/>
+            <point key="canvasLocation" x="26" y="183"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lW5-YW-7li">
@@ -83,12 +103,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZlG-2t-gki" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-497" y="147"/>
+            <point key="canvasLocation" x="-896" y="183"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
