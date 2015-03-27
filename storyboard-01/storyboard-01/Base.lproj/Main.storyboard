@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cGC-jO-Y98">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cGC-jO-Y98">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--first-->
@@ -17,20 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uev-5l-bGN">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uev-5l-bGN">
                                 <rect key="frame" x="20" y="84" width="130" height="200"/>
                                 <color key="backgroundColor" red="1" green="0.68782350059999997" blue="0.35971051440000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5at-Zx-PZA">
-                                <rect key="frame" x="170" y="84" width="130" height="200"/>
-                                <color key="backgroundColor" red="0.70676984330000003" green="0.51180597210000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHB-fX-aU2">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHB-fX-aU2">
                                 <rect key="frame" x="20" y="304" width="280" height="200"/>
                                 <color key="backgroundColor" red="0.02294027383" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5at-Zx-PZA">
+                                <rect key="frame" x="170" y="84" width="130" height="200"/>
+                                <color key="backgroundColor" red="0.70676984330000003" green="0.51180597210000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5at-Zx-PZA" firstAttribute="top" secondItem="140-xZ-Jei" secondAttribute="bottom" constant="20" id="05C-iN-eHa"/>
+                            <constraint firstItem="5at-Zx-PZA" firstAttribute="leading" secondItem="Uev-5l-bGN" secondAttribute="trailing" constant="20" id="JEa-br-ozf"/>
+                            <constraint firstItem="dHB-fX-aU2" firstAttribute="top" secondItem="5at-Zx-PZA" secondAttribute="bottom" constant="20" id="TCN-jK-0tw"/>
+                            <constraint firstItem="dHB-fX-aU2" firstAttribute="leading" secondItem="bLF-GK-GaM" secondAttribute="leadingMargin" constant="4" id="bH3-iH-BHA"/>
+                            <constraint firstItem="Uev-5l-bGN" firstAttribute="leading" secondItem="bLF-GK-GaM" secondAttribute="leadingMargin" constant="4" id="pOv-fe-d4J"/>
+                            <constraint firstItem="Uev-5l-bGN" firstAttribute="top" secondItem="140-xZ-Jei" secondAttribute="bottom" constant="20" id="wTp-wc-5Bx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="first" id="9zg-tv-qZV">
                         <barButtonItem key="rightBarButtonItem" title="next" id="JTx-m3-wtl">
@@ -41,6 +50,11 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bottomView" destination="dHB-fX-aU2" id="tqt-hB-Cdm"/>
+                        <outlet property="leftView" destination="Uev-5l-bGN" id="3N0-9A-lhi"/>
+                        <outlet property="rightView" destination="5at-Zx-PZA" id="UhC-uv-9bI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1L-20-x3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
