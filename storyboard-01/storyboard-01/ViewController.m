@@ -47,7 +47,7 @@
         frame.size.height = 120.0f;
         _rightView.frame = frame;
         
-        CGFloat height = kScreenWidth - CGRectGetMaxY(_leftView.frame) - 2 * 20;
+        CGFloat height = kScreenWidth - CGRectGetMaxY(_leftView.frame) - 3 * 20;
         
         frame = _bottomView.frame;
         frame.origin.y = CGRectGetMaxY(_leftView.frame) + 20.0f;
