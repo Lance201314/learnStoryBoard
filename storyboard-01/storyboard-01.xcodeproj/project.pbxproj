@@ -14,6 +14,8 @@
 		7E8E0E8C1AA74A06007D492B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8E0E8B1AA74A06007D492B /* Images.xcassets */; };
 		7E8E0E8F1AA74A06007D492B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8E0E8D1AA74A06007D492B /* LaunchScreen.xib */; };
 		7E8E0E9B1AA74A06007D492B /* storyboard_01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E0E9A1AA74A06007D492B /* storyboard_01Tests.m */; };
+		A336AF4D1AC8FBC5002C08D0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A336AF4C1AC8FBC5002C08D0 /* SecondViewController.m */; };
+		A336AF501AC922B1002C08D0 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A336AF4F1AC922B1002C08D0 /* CustomCell.m */; };
 		A35ECA391AC4FB2100CDE93F /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35ECA381AC4FB2100CDE93F /* View.xib */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,10 @@
 		7E8E0E941AA74A06007D492B /* storyboard-01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "storyboard-01Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8E0E991AA74A06007D492B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8E0E9A1AA74A06007D492B /* storyboard_01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = storyboard_01Tests.m; sourceTree = "<group>"; };
+		A336AF4B1AC8FBC5002C08D0 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A336AF4C1AC8FBC5002C08D0 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A336AF4E1AC922B1002C08D0 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		A336AF4F1AC922B1002C08D0 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		A35ECA371AC4EFE500CDE93F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A35ECA381AC4FB2100CDE93F /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +95,10 @@
 				7E8E0E831AA74A06007D492B /* AppDelegate.m */,
 				7E8E0E851AA74A06007D492B /* ViewController.h */,
 				7E8E0E861AA74A06007D492B /* ViewController.m */,
+				A336AF4B1AC8FBC5002C08D0 /* SecondViewController.h */,
+				A336AF4C1AC8FBC5002C08D0 /* SecondViewController.m */,
+				A336AF4E1AC922B1002C08D0 /* CustomCell.h */,
+				A336AF4F1AC922B1002C08D0 /* CustomCell.m */,
 				7E8E0E881AA74A06007D492B /* Main.storyboard */,
 				7E8E0E8B1AA74A06007D492B /* Images.xcassets */,
 				7E8E0E8D1AA74A06007D492B /* LaunchScreen.xib */,
@@ -225,9 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A336AF4D1AC8FBC5002C08D0 /* SecondViewController.m in Sources */,
 				7E8E0E871AA74A06007D492B /* ViewController.m in Sources */,
 				7E8E0E841AA74A06007D492B /* AppDelegate.m in Sources */,
 				7E8E0E811AA74A06007D492B /* main.m in Sources */,
+				A336AF501AC922B1002C08D0 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
