@@ -1,24 +1,18 @@
 //
-//  SecondViewController.m
+//  PopTableViewController.m
 //  storyboard-01
 //
-//  Created by lance on 15/3/30.
+//  Created by Lance Lan on 15/3/30.
 //  Copyright (c) 2015年 Lance Lan. All rights reserved.
 //
 
-#import "SecondViewController.h"
-#import "CustomCell.h"
+#import "PopTableViewController.h"
 
-@interface SecondViewController ()
-{
-    NSUInteger _rows;
-}
-
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
+@interface PopTableViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation PopTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,14 +22,6 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _rows = 10;
-}
-
-- (IBAction)unwindSegue:(UIStoryboardSegue *)segue
-{
-    [segue.destinationViewController dismissViewControllerAnimated:YES completion:^{
-        
-    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,39 +33,23 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return _rows;
+    return 0;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 100.0;
-}
-
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"customCell" forIndexPath:indexPath];
-    cell.handleGestureEndBlock = ^(BOOL isDelete) {
-        if (isDelete) {
-            
-            [_tableView beginUpdates];
-            _rows --;
-            [_tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-            [_tableView endUpdates];
-            
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-                [_tableView reloadData];
-            });
-        }
-    };
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    // Configure the cell...
     
     return cell;
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.
