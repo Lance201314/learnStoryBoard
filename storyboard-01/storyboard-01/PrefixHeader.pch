@@ -15,4 +15,6 @@
 #define kScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
 #define kScreenWidth CGRectGetWidth([UIScreen mainScreen].bounds)
 
+#import "UIViewController+Logging.h"
+
 #endif
