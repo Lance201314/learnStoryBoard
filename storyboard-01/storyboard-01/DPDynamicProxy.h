@@ -12,7 +12,7 @@
 @interface DPDynamicProxy : NSProxy <DPDynamicProtocol>
 {
     @private
-    id<DPDynamicProtocol> _obj;
+    id<DPDynamicProtocol> _obj; // 协议的对象
 }
 
 - (id)initWithObject:(id<DPDynamicProtocol>)obj;
