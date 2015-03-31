@@ -11,6 +11,7 @@
 
 @implementation UIViewController (Logging)
 
+// 替换的方法，一般用于log日志等功能
 - (void)swizzled_viewDidAppear:(BOOL)animated
 {
     // 运行时的代码，不会是递归方式调用的～
@@ -24,17 +25,24 @@
 // 运行时，交换执行的方法
 void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 {
+    // 原始方法
     Method originalMethod = class_getInstanceMethod(class, originalSelector);
+    // 替换方法
     Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
     
-    BOOL didAddMethod = class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+    // 对一个类新增一个方法，返回新增方法是否成功, 目的是为后面替换方法。
+    BOOL didAddMethod = class_addMethod(class, swizzledSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+    
     if (didAddMethod) {
+        // 如果添加成功，则替换实现方法体
         class_replaceMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
     } else {
+        // 添加失败，还原替换
         method_exchangeImplementations(originalMethod, swizzledMethod);
     }
 }
 
+//
 + (void)load
 {
     swizzleMethod([self class], @selector(viewDidLoad), @selector(swizzled_viewDidAppear:));
