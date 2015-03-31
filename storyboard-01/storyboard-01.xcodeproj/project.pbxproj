@@ -17,12 +17,13 @@
 		7E8E0E8C1AA74A06007D492B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8E0E8B1AA74A06007D492B /* Images.xcassets */; };
 		7E8E0E8F1AA74A06007D492B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8E0E8D1AA74A06007D492B /* LaunchScreen.xib */; };
 		7E8E0E9B1AA74A06007D492B /* storyboard_01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E0E9A1AA74A06007D492B /* storyboard_01Tests.m */; };
+		7ED4A7351ACAEDF700DEDD9D /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED4A7341ACAEDF700DEDD9D /* TabBarController.m */; };
+		7ED4A7381ACAF74C00DEDD9D /* RoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED4A7371ACAF74C00DEDD9D /* RoundButton.m */; };
 		A336AF4D1AC8FBC5002C08D0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A336AF4C1AC8FBC5002C08D0 /* SecondViewController.m */; };
 		A336AF501AC922B1002C08D0 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A336AF4F1AC922B1002C08D0 /* CustomCell.m */; };
 		A336AF561AC93D8A002C08D0 /* UIViewController+Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = A336AF551AC93D8A002C08D0 /* UIViewController+Logging.m */; };
 		A336AF581AC93ED5002C08D0 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = A336AF571AC93ED5002C08D0 /* podfile */; };
 		A35ECA391AC4FB2100CDE93F /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35ECA381AC4FB2100CDE93F /* View.xib */; };
-		A3ABC0301ACA2F0700816550 /* 2015-03-30-ios-aop-program.md in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC02F1ACA2F0700816550 /* 2015-03-30-ios-aop-program.md */; };
 		A3ABC0361ACA51A800816550 /* NSArray+ForwardingIteration.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */; };
 		A3ABC0391ACA534800816550 /* MessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC0381ACA534800816550 /* MessageInterceptor.m */; };
 		A3ABC03C1ACA801F00816550 /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC03B1ACA801F00816550 /* HitTestView.m */; };
@@ -61,6 +62,10 @@
 		7E8E0E941AA74A06007D492B /* storyboard-01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "storyboard-01Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8E0E991AA74A06007D492B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8E0E9A1AA74A06007D492B /* storyboard_01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = storyboard_01Tests.m; sourceTree = "<group>"; };
+		7ED4A7331ACAEDF700DEDD9D /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		7ED4A7341ACAEDF700DEDD9D /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		7ED4A7361ACAF74C00DEDD9D /* RoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundButton.h; sourceTree = "<group>"; };
+		7ED4A7371ACAF74C00DEDD9D /* RoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundButton.m; sourceTree = "<group>"; };
 		A336AF4B1AC8FBC5002C08D0 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		A336AF4C1AC8FBC5002C08D0 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A336AF4E1AC922B1002C08D0 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
@@ -70,7 +75,6 @@
 		A336AF571AC93ED5002C08D0 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
 		A35ECA371AC4EFE500CDE93F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A35ECA381AC4FB2100CDE93F /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
-		A3ABC02F1ACA2F0700816550 /* 2015-03-30-ios-aop-program.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "2015-03-30-ios-aop-program.md"; path = "../../../blog/blog_/Lance201314.github.io/_posts/ios/2015-03-30-ios-aop-program.md"; sourceTree = "<group>"; };
 		A3ABC0341ACA51A800816550 /* NSArray+ForwardingIteration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ForwardingIteration.h"; sourceTree = "<group>"; };
 		A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ForwardingIteration.m"; sourceTree = "<group>"; };
 		A3ABC0371ACA534800816550 /* MessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageInterceptor.h; sourceTree = "<group>"; };
@@ -105,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				A336AF571AC93ED5002C08D0 /* podfile */,
-				A3ABC02F1ACA2F0700816550 /* 2015-03-30-ios-aop-program.md */,
 				A35ECA381AC4FB2100CDE93F /* View.xib */,
 				7E8E0E7D1AA74A06007D492B /* storyboard-01 */,
 				7E8E0E971AA74A06007D492B /* storyboard-01Tests */,
@@ -152,6 +155,10 @@
 				A3ABC03B1ACA801F00816550 /* HitTestView.m */,
 				A3ABC0401ACA9BAD00816550 /* TabBarViewController.h */,
 				A3ABC0411ACA9BAD00816550 /* TabBarViewController.m */,
+				7ED4A7331ACAEDF700DEDD9D /* TabBarController.h */,
+				7ED4A7341ACAEDF700DEDD9D /* TabBarController.m */,
+				7ED4A7361ACAF74C00DEDD9D /* RoundButton.h */,
+				7ED4A7371ACAF74C00DEDD9D /* RoundButton.m */,
 				7E8E0E881AA74A06007D492B /* Main.storyboard */,
 				7E8E0E8B1AA74A06007D492B /* Images.xcassets */,
 				7E8E0E8D1AA74A06007D492B /* LaunchScreen.xib */,
@@ -290,7 +297,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3ABC03F1ACA82F000816550 /* HitTestViewController.m in Sources */,
-				A3ABC0301ACA2F0700816550 /* 2015-03-30-ios-aop-program.md in Sources */,
 				A336AF4D1AC8FBC5002C08D0 /* SecondViewController.m in Sources */,
 				7E8E0E871AA74A06007D492B /* ViewController.m in Sources */,
 				A3ABC0391ACA534800816550 /* MessageInterceptor.m in Sources */,
@@ -302,6 +308,8 @@
 				A3ABC0421ACA9BAD00816550 /* TabBarViewController.m in Sources */,
 				7E8E0E811AA74A06007D492B /* main.m in Sources */,
 				A336AF561AC93D8A002C08D0 /* UIViewController+Logging.m in Sources */,
+				7ED4A7381ACAF74C00DEDD9D /* RoundButton.m in Sources */,
+				7ED4A7351ACAEDF700DEDD9D /* TabBarController.m in Sources */,
 				A336AF501AC922B1002C08D0 /* CustomCell.m in Sources */,
 				7E5E9DF41AC9A2CC00E1931A /* DPNormalObject.m in Sources */,
 			);

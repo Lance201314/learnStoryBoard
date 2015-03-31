@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cGC-jO-Y98">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cGC-jO-Y98">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
@@ -178,7 +178,7 @@
         <scene sceneID="Cro-bc-cGx">
             <objects>
                 <navigationController title="what" id="dcU-dK-3ir" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="TZy-F7-pZd"/>
+                    <tabBarItem key="tabBarItem" id="TZy-F7-pZd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AGa-zC-abs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -195,7 +195,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="n3M-y3-SDX">
             <objects>
-                <tabBarController id="zyP-hj-Afu" sceneMemberID="viewController">
+                <tabBarController id="zyP-hj-Afu" customClass="TabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="SHz-WA-QI8">
