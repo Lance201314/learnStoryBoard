@@ -25,6 +25,9 @@
 		A3ABC0301ACA2F0700816550 /* 2015-03-30-ios-aop-program.md in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC02F1ACA2F0700816550 /* 2015-03-30-ios-aop-program.md */; };
 		A3ABC0361ACA51A800816550 /* NSArray+ForwardingIteration.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */; };
 		A3ABC0391ACA534800816550 /* MessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC0381ACA534800816550 /* MessageInterceptor.m */; };
+		A3ABC03C1ACA801F00816550 /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC03B1ACA801F00816550 /* HitTestView.m */; };
+		A3ABC03F1ACA82F000816550 /* HitTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC03E1ACA82F000816550 /* HitTestViewController.m */; };
+		A3ABC0421ACA9BAD00816550 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC0411ACA9BAD00816550 /* TabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,12 @@
 		A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ForwardingIteration.m"; sourceTree = "<group>"; };
 		A3ABC0371ACA534800816550 /* MessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageInterceptor.h; sourceTree = "<group>"; };
 		A3ABC0381ACA534800816550 /* MessageInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageInterceptor.m; sourceTree = "<group>"; };
+		A3ABC03A1ACA801F00816550 /* HitTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitTestView.h; sourceTree = "<group>"; };
+		A3ABC03B1ACA801F00816550 /* HitTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitTestView.m; sourceTree = "<group>"; };
+		A3ABC03D1ACA82F000816550 /* HitTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitTestViewController.h; sourceTree = "<group>"; };
+		A3ABC03E1ACA82F000816550 /* HitTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitTestViewController.m; sourceTree = "<group>"; };
+		A3ABC0401ACA9BAD00816550 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		A3ABC0411ACA9BAD00816550 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +146,12 @@
 				A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */,
 				A3ABC0371ACA534800816550 /* MessageInterceptor.h */,
 				A3ABC0381ACA534800816550 /* MessageInterceptor.m */,
+				A3ABC03D1ACA82F000816550 /* HitTestViewController.h */,
+				A3ABC03E1ACA82F000816550 /* HitTestViewController.m */,
+				A3ABC03A1ACA801F00816550 /* HitTestView.h */,
+				A3ABC03B1ACA801F00816550 /* HitTestView.m */,
+				A3ABC0401ACA9BAD00816550 /* TabBarViewController.h */,
+				A3ABC0411ACA9BAD00816550 /* TabBarViewController.m */,
 				7E8E0E881AA74A06007D492B /* Main.storyboard */,
 				7E8E0E8B1AA74A06007D492B /* Images.xcassets */,
 				7E8E0E8D1AA74A06007D492B /* LaunchScreen.xib */,
@@ -274,14 +289,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3ABC03F1ACA82F000816550 /* HitTestViewController.m in Sources */,
 				A3ABC0301ACA2F0700816550 /* 2015-03-30-ios-aop-program.md in Sources */,
 				A336AF4D1AC8FBC5002C08D0 /* SecondViewController.m in Sources */,
 				7E8E0E871AA74A06007D492B /* ViewController.m in Sources */,
 				A3ABC0391ACA534800816550 /* MessageInterceptor.m in Sources */,
+				A3ABC03C1ACA801F00816550 /* HitTestView.m in Sources */,
 				7E5E9DF01AC998DF00E1931A /* PopTableViewController.m in Sources */,
 				7E8E0E841AA74A06007D492B /* AppDelegate.m in Sources */,
 				A3ABC0361ACA51A800816550 /* NSArray+ForwardingIteration.m in Sources */,
 				7E5E9DF71AC9A33900E1931A /* DPDynamicProxy.m in Sources */,
+				A3ABC0421ACA9BAD00816550 /* TabBarViewController.m in Sources */,
 				7E8E0E811AA74A06007D492B /* main.m in Sources */,
 				A336AF561AC93D8A002C08D0 /* UIViewController+Logging.m in Sources */,
 				A336AF501AC922B1002C08D0 /* CustomCell.m in Sources */,

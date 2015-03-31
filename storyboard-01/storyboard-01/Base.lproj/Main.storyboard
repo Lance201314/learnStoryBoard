@@ -48,6 +48,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="first" id="9zg-tv-qZV">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="e9E-DG-pO0">
+                            <connections>
+                                <segue destination="gtH-4I-GDW" kind="show" id="0Z1-Kb-p0k"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="next" id="JTx-m3-wtl">
                             <connections>
                                 <segue destination="mQJ-vM-uxh" kind="show" id="ASg-8t-2SM"/>
@@ -65,6 +70,148 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1L-20-x3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-404" y="183"/>
+        </scene>
+        <!--Hit test-->
+        <scene sceneID="CpT-n2-NLY">
+            <objects>
+                <viewController title="Hit test" id="gtH-4I-GDW" customClass="HitTestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BVn-2m-iQu"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Bd-vd-mda"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kwy-tO-yw1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BbB-0t-NV9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="gBX-1C-czu">
+                            <connections>
+                                <segue destination="zyP-hj-Afu" kind="presentation" id="izO-hN-qa7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="hit test"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XfO-xd-JjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="183"/>
+        </scene>
+        <!--自定义barItem-->
+        <scene sceneID="lGC-XP-wr0">
+            <objects>
+                <viewController title="自定义barItem" id="3bQ-J5-phg" customClass="TabBarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qbz-jl-FYL"/>
+                        <viewControllerLayoutGuide type="bottom" id="NQl-vl-NEN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OaB-lB-bHG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="wmh-Kd-CWh">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifh-W8-QbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1707" y="183"/>
+        </scene>
+        <!--联系人-->
+        <scene sceneID="6iz-bq-cYb">
+            <objects>
+                <viewController title="联系人" id="Lqk-cA-lEl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ahg-Uu-lTH"/>
+                        <viewControllerLayoutGuide type="bottom" id="XHB-dU-bMg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IVZ-T0-eHk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="LLr-D0-Nt8"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sTk-xA-GsM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247" y="625"/>
+        </scene>
+        <!--下载-->
+        <scene sceneID="Owj-sD-Wky">
+            <objects>
+                <viewController title="下载" id="FHV-5P-1rz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Ru-6O-xzb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kh7-m2-BZN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YVO-la-IFu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IPp-nh-QOG">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="fM3-az-WK4">
+                            <connections>
+                                <segue destination="Orv-Ut-Lap" kind="unwind" unwindAction="unwindSegue:" id="FKn-nX-QnH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="下载"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z1m-Co-s3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Orv-Ut-Lap" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1649" y="-593"/>
+        </scene>
+        <!--what-->
+        <scene sceneID="Cro-bc-cGx">
+            <objects>
+                <navigationController title="what" id="dcU-dK-3ir" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="TZy-F7-pZd"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AGa-zC-abs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FHV-5P-1rz" kind="relationship" relationship="rootViewController" id="QnP-sg-DMe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkr-77-m4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176" y="-316"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="n3M-y3-SDX">
+            <objects>
+                <tabBarController id="zyP-hj-Afu" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="SHz-WA-QI8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3bQ-J5-phg" kind="relationship" relationship="viewControllers" id="ONK-uT-2jq"/>
+                        <segue destination="dcU-dK-3ir" kind="relationship" relationship="viewControllers" id="8Ik-IN-G8G"/>
+                        <segue destination="Lqk-cA-lEl" kind="relationship" relationship="viewControllers" id="5jU-bR-oH4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fb9-Iw-rEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="183"/>
         </scene>
         <!--when-->
         <scene sceneID="QQh-Qw-U7J">
@@ -264,7 +411,7 @@
                     <navigationItem key="navigationItem" id="hId-C3-8Wf">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="ivc-aI-Env">
                             <connections>
-                                <segue destination="1pD-hB-fsd" kind="presentation" id="gfj-nm-iPs"/>
+                                <segue destination="1pD-hB-fsd" kind="presentation" id="dAA-zp-BQn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

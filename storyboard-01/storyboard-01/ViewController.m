@@ -28,6 +28,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)unwindSegue:(UIStoryboardSegue *)segue
+{
+    NSLog(@"%@", NSStringFromClass([segue.destinationViewController class]));
+}
+
 - (IBAction)touchButton:(UIButton *)sender {
     if ([[sender titleForState:UIControlStateNormal] isEqual:@"b"]) {
         [sender setTitle:@"test button info" forState:UIControlStateNormal];
