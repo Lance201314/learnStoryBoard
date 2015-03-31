@@ -12,13 +12,31 @@
 @implementation UIViewController (Logging)
 
 // 替换的方法，一般用于log日志等功能
-- (void)swizzled_viewDidAppear:(BOOL)animated
+- (void)swizzled_viewWillAppear:(BOOL)animated
 {
     // 运行时的代码，不会是递归方式调用的～
-    [self swizzled_viewDidAppear:animated];
+    [self swizzled_viewWillAppear:animated];
     
-    if (![self isKindOfClass:[UINavigationController class]]) {
-        NSLog(@"%@~~~~%@", NSStringFromClass([self class]), self.title);
+    if (![self isKindOfClass:[UINavigationController class]] && ![NSStringFromClass([self class]) isEqualToString:@"UIInputWindowController"]) {
+        if (self.title == nil) {
+            if (self.nibName) {
+                UIViewController *viewController = [[UIViewController alloc] initWithNibName:self.nibName bundle:nil];
+                NSLog(@"%@~~~~%@", NSStringFromClass([viewController class]), viewController.title);
+            }
+        } else {
+            NSLog(@"%@~~~~%@", NSStringFromClass([self class]), self.title);
+        }
+    }
+}
+
+// 替换的方法，一般用于log日志等功能
+- (void)swizzled_viewDidDisappear:(BOOL)animated
+{
+    // 运行时的代码，不会是递归方式调用的～
+    [self swizzled_viewDidDisappear:animated];
+    
+    if (![self isKindOfClass:[UINavigationController class]] && ![NSStringFromClass([self class]) isEqualToString:@"UIInputWindowController"]) {
+        NSLog(@"disappear %@~~~~%@", NSStringFromClass([self class]), self.title);
     }
 }
 
@@ -42,10 +60,11 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
     }
 }
 
-//
+// NSObject的方法，加载到内存中
 + (void)load
 {
-    swizzleMethod([self class], @selector(viewDidLoad), @selector(swizzled_viewDidAppear:));
+    swizzleMethod([self class], @selector(viewWillAppear:), @selector(swizzled_viewWillAppear:));
+    swizzleMethod([self class], @selector(viewWillDisappear:), @selector(swizzled_viewDidDisappear:));
 }
 
 @end

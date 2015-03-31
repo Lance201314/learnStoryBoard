@@ -12,6 +12,8 @@
 	<dict>
 		<key>4FEC262012FC07F083928AE5861C1C9CBFFA3C3C</key>
 		<string>github.com:Lance201314/learnStoryBoard.git</string>
+		<key>F0F7D77B69B5978F85FCA5256D72C790B652E157</key>
+		<string>github.com:Lance201314/Lance201314.github.io.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>storyboard-01/storyboard-01.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>4FEC262012FC07F083928AE5861C1C9CBFFA3C3C</key>
 		<string>../../..</string>
+		<key>F0F7D77B69B5978F85FCA5256D72C790B652E157</key>
+		<string>../../../../../blog/blog_/Lance201314.github.io</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:Lance201314/learnStoryBoard.git</string>
@@ -28,6 +32,14 @@
 	<string>4FEC262012FC07F083928AE5861C1C9CBFFA3C3C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F0F7D77B69B5978F85FCA5256D72C790B652E157</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lance201314.github.io</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

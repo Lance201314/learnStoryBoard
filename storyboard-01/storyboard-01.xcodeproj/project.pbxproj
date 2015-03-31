@@ -22,6 +22,9 @@
 		A336AF561AC93D8A002C08D0 /* UIViewController+Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = A336AF551AC93D8A002C08D0 /* UIViewController+Logging.m */; };
 		A336AF581AC93ED5002C08D0 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = A336AF571AC93ED5002C08D0 /* podfile */; };
 		A35ECA391AC4FB2100CDE93F /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35ECA381AC4FB2100CDE93F /* View.xib */; };
+		A3ABC0301ACA2F0700816550 /* 2015-03-30-ios-aop-program.md in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC02F1ACA2F0700816550 /* 2015-03-30-ios-aop-program.md */; };
+		A3ABC0361ACA51A800816550 /* NSArray+ForwardingIteration.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */; };
+		A3ABC0391ACA534800816550 /* MessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC0381ACA534800816550 /* MessageInterceptor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,11 @@
 		A336AF571AC93ED5002C08D0 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
 		A35ECA371AC4EFE500CDE93F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A35ECA381AC4FB2100CDE93F /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		A3ABC02F1ACA2F0700816550 /* 2015-03-30-ios-aop-program.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "2015-03-30-ios-aop-program.md"; path = "../../../blog/blog_/Lance201314.github.io/_posts/ios/2015-03-30-ios-aop-program.md"; sourceTree = "<group>"; };
+		A3ABC0341ACA51A800816550 /* NSArray+ForwardingIteration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ForwardingIteration.h"; sourceTree = "<group>"; };
+		A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ForwardingIteration.m"; sourceTree = "<group>"; };
+		A3ABC0371ACA534800816550 /* MessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageInterceptor.h; sourceTree = "<group>"; };
+		A3ABC0381ACA534800816550 /* MessageInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageInterceptor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				A336AF571AC93ED5002C08D0 /* podfile */,
+				A3ABC02F1ACA2F0700816550 /* 2015-03-30-ios-aop-program.md */,
 				A35ECA381AC4FB2100CDE93F /* View.xib */,
 				7E8E0E7D1AA74A06007D492B /* storyboard-01 */,
 				7E8E0E971AA74A06007D492B /* storyboard-01Tests */,
@@ -124,6 +133,10 @@
 				7E5E9DF31AC9A2CC00E1931A /* DPNormalObject.m */,
 				7E5E9DF51AC9A33900E1931A /* DPDynamicProxy.h */,
 				7E5E9DF61AC9A33900E1931A /* DPDynamicProxy.m */,
+				A3ABC0341ACA51A800816550 /* NSArray+ForwardingIteration.h */,
+				A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */,
+				A3ABC0371ACA534800816550 /* MessageInterceptor.h */,
+				A3ABC0381ACA534800816550 /* MessageInterceptor.m */,
 				7E8E0E881AA74A06007D492B /* Main.storyboard */,
 				7E8E0E8B1AA74A06007D492B /* Images.xcassets */,
 				7E8E0E8D1AA74A06007D492B /* LaunchScreen.xib */,
@@ -261,10 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3ABC0301ACA2F0700816550 /* 2015-03-30-ios-aop-program.md in Sources */,
 				A336AF4D1AC8FBC5002C08D0 /* SecondViewController.m in Sources */,
 				7E8E0E871AA74A06007D492B /* ViewController.m in Sources */,
+				A3ABC0391ACA534800816550 /* MessageInterceptor.m in Sources */,
 				7E5E9DF01AC998DF00E1931A /* PopTableViewController.m in Sources */,
 				7E8E0E841AA74A06007D492B /* AppDelegate.m in Sources */,
+				A3ABC0361ACA51A800816550 /* NSArray+ForwardingIteration.m in Sources */,
 				7E5E9DF71AC9A33900E1931A /* DPDynamicProxy.m in Sources */,
 				7E8E0E811AA74A06007D492B /* main.m in Sources */,
 				A336AF561AC93D8A002C08D0 /* UIViewController+Logging.m in Sources */,

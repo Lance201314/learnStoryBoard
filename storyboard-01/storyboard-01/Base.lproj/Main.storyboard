@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cGC-jO-Y98">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cGC-jO-Y98">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--first-->
+        <!--where-->
         <scene sceneID="tOO-FK-H7M">
             <objects>
-                <viewController id="iQl-CL-wnd" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="where" id="iQl-CL-wnd" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fim-j7-a1j"/>
                         <viewControllerLayoutGuide type="bottom" id="JXT-Rm-6EO"/>
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="-404" y="183"/>
         </scene>
-        <!--Root View Controller-->
+        <!--when-->
         <scene sceneID="QQh-Qw-U7J">
             <objects>
-                <tableViewController id="n9K-ma-lEW" customClass="PopTableViewController" sceneMemberID="viewController">
+                <tableViewController title="when" id="n9K-ma-lEW" customClass="PopTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5ud-Y6-r2A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="-969" y="1598"/>
         </scene>
-        <!--second-->
+        <!--why-->
         <scene sceneID="Gd2-Ns-bZE">
             <objects>
-                <viewController id="mQJ-vM-uxh" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController title="why" id="mQJ-vM-uxh" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wT3-TE-PSZ"/>
                         <viewControllerLayoutGuide type="bottom" id="Ide-om-J8e"/>
@@ -206,6 +206,12 @@
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JdY-bE-0cN">
                                                             <rect key="frame" x="0.0" y="0.0" width="60" height="63"/>
                                                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.94901960780000005" green="0.14920900849999999" blue="0.69987966530000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -255,7 +261,7 @@
                             <constraint firstItem="Ide-om-J8e" firstAttribute="top" secondItem="aes-ND-BpN" secondAttribute="bottom" id="muC-fi-sCS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="second" id="hId-C3-8Wf">
+                    <navigationItem key="navigationItem" id="hId-C3-8Wf">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="ivc-aI-Env">
                             <connections>
                                 <segue destination="1pD-hB-fsd" kind="presentation" id="gfj-nm-iPs"/>

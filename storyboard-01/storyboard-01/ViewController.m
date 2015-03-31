@@ -21,9 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    // 调用一次，多次执行～
-//    [UIViewController load];
 }
 
 - (void)didReceiveMemoryWarning {

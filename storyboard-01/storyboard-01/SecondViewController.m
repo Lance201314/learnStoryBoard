@@ -28,14 +28,13 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
     _rows = 10;
 }
 
 - (IBAction)unwindSegue:(UIStoryboardSegue *)segue
 {
-    [segue.destinationViewController dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    NSLog(@"%@", NSStringFromClass([segue.destinationViewController class]));
 }
 
 - (void)didReceiveMemoryWarning {
