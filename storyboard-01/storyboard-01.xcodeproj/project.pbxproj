@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E5E9DF01AC998DF00E1931A /* PopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5E9DEF1AC998DF00E1931A /* PopTableViewController.m */; };
 		7E8E0E811AA74A06007D492B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E0E801AA74A06007D492B /* main.m */; };
 		7E8E0E841AA74A06007D492B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E0E831AA74A06007D492B /* AppDelegate.m */; };
 		7E8E0E871AA74A06007D492B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E0E861AA74A06007D492B /* ViewController.m */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E5E9DEE1AC998DF00E1931A /* PopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTableViewController.h; sourceTree = "<group>"; };
+		7E5E9DEF1AC998DF00E1931A /* PopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTableViewController.m; sourceTree = "<group>"; };
 		7E8E0E7B1AA74A06007D492B /* storyboard-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "storyboard-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8E0E7F1AA74A06007D492B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8E0E801AA74A06007D492B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				A336AF4F1AC922B1002C08D0 /* CustomCell.m */,
 				A336AF541AC93D8A002C08D0 /* UIViewController+Logging.h */,
 				A336AF551AC93D8A002C08D0 /* UIViewController+Logging.m */,
+				7E5E9DEE1AC998DF00E1931A /* PopTableViewController.h */,
+				7E5E9DEF1AC998DF00E1931A /* PopTableViewController.m */,
 				7E8E0E881AA74A06007D492B /* Main.storyboard */,
 				7E8E0E8B1AA74A06007D492B /* Images.xcassets */,
 				7E8E0E8D1AA74A06007D492B /* LaunchScreen.xib */,
@@ -246,6 +251,7 @@
 			files = (
 				A336AF4D1AC8FBC5002C08D0 /* SecondViewController.m in Sources */,
 				7E8E0E871AA74A06007D492B /* ViewController.m in Sources */,
+				7E5E9DF01AC998DF00E1931A /* PopTableViewController.m in Sources */,
 				7E8E0E841AA74A06007D492B /* AppDelegate.m in Sources */,
 				7E8E0E811AA74A06007D492B /* main.m in Sources */,
 				A336AF561AC93D8A002C08D0 /* UIViewController+Logging.m in Sources */,

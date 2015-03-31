@@ -13,12 +13,15 @@
 
 - (void)swizzled_viewDidAppear:(BOOL)animated
 {
+    // 运行时的代码，不会是递归方式调用的～
     [self swizzled_viewDidAppear:animated];
     
-    NSLog(@"%@", NSStringFromClass([self class]));
+    if (![self isKindOfClass:[UINavigationController class]]) {
+        NSLog(@"%@~~~~%@", NSStringFromClass([self class]), self.title);
+    }
 }
 
-
+// 运行时，交换执行的方法
 void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 {
     Method originalMethod = class_getInstanceMethod(class, originalSelector);
@@ -34,7 +37,7 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 
 + (void)load
 {
-    swizzleMethod([self class], @selector(viewDidAppear:), @selector(swizzled_viewDidAppear:));
+    swizzleMethod([self class], @selector(viewDidLoad), @selector(swizzled_viewDidAppear:));
 }
 
 @end
