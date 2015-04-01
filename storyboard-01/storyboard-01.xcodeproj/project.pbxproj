@@ -23,7 +23,9 @@
 		A336AF501AC922B1002C08D0 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A336AF4F1AC922B1002C08D0 /* CustomCell.m */; };
 		A336AF561AC93D8A002C08D0 /* UIViewController+Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = A336AF551AC93D8A002C08D0 /* UIViewController+Logging.m */; };
 		A336AF581AC93ED5002C08D0 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = A336AF571AC93ED5002C08D0 /* podfile */; };
-		A35ECA391AC4FB2100CDE93F /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35ECA381AC4FB2100CDE93F /* View.xib */; };
+		A37496AB1ACB985800BDA6AA /* EmptyViewAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A37496AA1ACB985800BDA6AA /* EmptyViewAction.m */; };
+		A37496AE1ACBB73C00BDA6AA /* CustomHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A37496AD1ACBB73C00BDA6AA /* CustomHitTestView.m */; };
+		A37496B11ACBBF0B00BDA6AA /* TestHitView.m in Sources */ = {isa = PBXBuildFile; fileRef = A37496B01ACBBF0B00BDA6AA /* TestHitView.m */; };
 		A3ABC0361ACA51A800816550 /* NSArray+ForwardingIteration.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */; };
 		A3ABC0391ACA534800816550 /* MessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC0381ACA534800816550 /* MessageInterceptor.m */; };
 		A3ABC03C1ACA801F00816550 /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC03B1ACA801F00816550 /* HitTestView.m */; };
@@ -74,7 +76,12 @@
 		A336AF551AC93D8A002C08D0 /* UIViewController+Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Logging.m"; sourceTree = "<group>"; };
 		A336AF571AC93ED5002C08D0 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
 		A35ECA371AC4EFE500CDE93F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		A35ECA381AC4FB2100CDE93F /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		A37496A91ACB985800BDA6AA /* EmptyViewAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewAction.h; sourceTree = "<group>"; };
+		A37496AA1ACB985800BDA6AA /* EmptyViewAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewAction.m; sourceTree = "<group>"; };
+		A37496AC1ACBB73C00BDA6AA /* CustomHitTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHitTestView.h; sourceTree = "<group>"; };
+		A37496AD1ACBB73C00BDA6AA /* CustomHitTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHitTestView.m; sourceTree = "<group>"; };
+		A37496AF1ACBBF0B00BDA6AA /* TestHitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHitView.h; sourceTree = "<group>"; };
+		A37496B01ACBBF0B00BDA6AA /* TestHitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHitView.m; sourceTree = "<group>"; };
 		A3ABC0341ACA51A800816550 /* NSArray+ForwardingIteration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ForwardingIteration.h"; sourceTree = "<group>"; };
 		A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ForwardingIteration.m"; sourceTree = "<group>"; };
 		A3ABC0371ACA534800816550 /* MessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageInterceptor.h; sourceTree = "<group>"; };
@@ -109,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				A336AF571AC93ED5002C08D0 /* podfile */,
-				A35ECA381AC4FB2100CDE93F /* View.xib */,
 				7E8E0E7D1AA74A06007D492B /* storyboard-01 */,
 				7E8E0E971AA74A06007D492B /* storyboard-01Tests */,
 				7E8E0E7C1AA74A06007D492B /* Products */,
@@ -159,6 +165,12 @@
 				7ED4A7341ACAEDF700DEDD9D /* TabBarController.m */,
 				7ED4A7361ACAF74C00DEDD9D /* RoundButton.h */,
 				7ED4A7371ACAF74C00DEDD9D /* RoundButton.m */,
+				A37496A91ACB985800BDA6AA /* EmptyViewAction.h */,
+				A37496AA1ACB985800BDA6AA /* EmptyViewAction.m */,
+				A37496AC1ACBB73C00BDA6AA /* CustomHitTestView.h */,
+				A37496AD1ACBB73C00BDA6AA /* CustomHitTestView.m */,
+				A37496AF1ACBBF0B00BDA6AA /* TestHitView.h */,
+				A37496B01ACBBF0B00BDA6AA /* TestHitView.m */,
 				7E8E0E881AA74A06007D492B /* Main.storyboard */,
 				7E8E0E8B1AA74A06007D492B /* Images.xcassets */,
 				7E8E0E8D1AA74A06007D492B /* LaunchScreen.xib */,
@@ -274,7 +286,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35ECA391AC4FB2100CDE93F /* View.xib in Resources */,
 				7E8E0E8A1AA74A06007D492B /* Main.storyboard in Resources */,
 				A336AF581AC93ED5002C08D0 /* podfile in Resources */,
 				7E8E0E8F1AA74A06007D492B /* LaunchScreen.xib in Resources */,
@@ -299,7 +310,10 @@
 				A3ABC03F1ACA82F000816550 /* HitTestViewController.m in Sources */,
 				A336AF4D1AC8FBC5002C08D0 /* SecondViewController.m in Sources */,
 				7E8E0E871AA74A06007D492B /* ViewController.m in Sources */,
+				A37496B11ACBBF0B00BDA6AA /* TestHitView.m in Sources */,
+				A37496AE1ACBB73C00BDA6AA /* CustomHitTestView.m in Sources */,
 				A3ABC0391ACA534800816550 /* MessageInterceptor.m in Sources */,
+				A37496AB1ACB985800BDA6AA /* EmptyViewAction.m in Sources */,
 				A3ABC03C1ACA801F00816550 /* HitTestView.m in Sources */,
 				7E5E9DF01AC998DF00E1931A /* PopTableViewController.m in Sources */,
 				7E8E0E841AA74A06007D492B /* AppDelegate.m in Sources */,

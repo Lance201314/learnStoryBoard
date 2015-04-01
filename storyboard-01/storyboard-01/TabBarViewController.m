@@ -15,9 +15,8 @@
 {
     [super viewDidLoad];
     
-    RoundButton *tabButton = [RoundButton buttonWithType:UIButtonTypeCustom];
-    tabButton.frame = CGRectMake(0.0, -20, 80.0, 80.0);
-//    tabButton.clipsToBounds = YES;
+    RoundButton *tabButton = [[RoundButton alloc] initWithFrame:CGRectMake(0.0, 0.0, 80.0, 80.0)];
+    tabButton.clipsToBounds = YES;
     
     //    tabButton.center = self.tabBar.center;
     CGRect frame = self.tabBarController.tabBar.frame;

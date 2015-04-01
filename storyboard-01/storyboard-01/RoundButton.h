@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef UIView * (^HitTestViewBlock)(CGPoint point, UIEvent *event, BOOL *returnSuper);
+
 @interface RoundButton : UIButton
+
+@property (nonatomic, strong) HitTestViewBlock hitTestViewBlock;
 
 @end
