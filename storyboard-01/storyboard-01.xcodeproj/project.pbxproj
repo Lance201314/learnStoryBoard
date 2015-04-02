@@ -26,6 +26,9 @@
 		A37496AB1ACB985800BDA6AA /* EmptyViewAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A37496AA1ACB985800BDA6AA /* EmptyViewAction.m */; };
 		A37496AE1ACBB73C00BDA6AA /* CustomHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A37496AD1ACBB73C00BDA6AA /* CustomHitTestView.m */; };
 		A37496B11ACBBF0B00BDA6AA /* TestHitView.m in Sources */ = {isa = PBXBuildFile; fileRef = A37496B01ACBBF0B00BDA6AA /* TestHitView.m */; };
+		A37496B31ACBEDED00BDA6AA /* share.html in Resources */ = {isa = PBXBuildFile; fileRef = A37496B21ACBEDED00BDA6AA /* share.html */; };
+		A37496B51ACBF59A00BDA6AA /* _config.yml in Resources */ = {isa = PBXBuildFile; fileRef = A37496B41ACBF59A00BDA6AA /* _config.yml */; };
+		A37496B71ACBF78F00BDA6AA /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A37496B61ACBF78F00BDA6AA /* style.css */; };
 		A3ABC0361ACA51A800816550 /* NSArray+ForwardingIteration.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */; };
 		A3ABC0391ACA534800816550 /* MessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC0381ACA534800816550 /* MessageInterceptor.m */; };
 		A3ABC03C1ACA801F00816550 /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ABC03B1ACA801F00816550 /* HitTestView.m */; };
@@ -82,6 +85,9 @@
 		A37496AD1ACBB73C00BDA6AA /* CustomHitTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHitTestView.m; sourceTree = "<group>"; };
 		A37496AF1ACBBF0B00BDA6AA /* TestHitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHitView.h; sourceTree = "<group>"; };
 		A37496B01ACBBF0B00BDA6AA /* TestHitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHitView.m; sourceTree = "<group>"; };
+		A37496B21ACBEDED00BDA6AA /* share.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = share.html; path = ../../../../blog/blog_/Lance201314.github.io/_includes/share.html; sourceTree = "<group>"; };
+		A37496B41ACBF59A00BDA6AA /* _config.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = _config.yml; path = ../../../../blog/blog_/Lance201314.github.io/_config.yml; sourceTree = "<group>"; };
+		A37496B61ACBF78F00BDA6AA /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = ../../../../blog/blog_/Lance201314.github.io/assets/css/style.css; sourceTree = "<group>"; };
 		A3ABC0341ACA51A800816550 /* NSArray+ForwardingIteration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ForwardingIteration.h"; sourceTree = "<group>"; };
 		A3ABC0351ACA51A800816550 /* NSArray+ForwardingIteration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ForwardingIteration.m"; sourceTree = "<group>"; };
 		A3ABC0371ACA534800816550 /* MessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageInterceptor.h; sourceTree = "<group>"; };
@@ -134,6 +140,9 @@
 		7E8E0E7D1AA74A06007D492B /* storyboard-01 */ = {
 			isa = PBXGroup;
 			children = (
+				A37496B41ACBF59A00BDA6AA /* _config.yml */,
+				A37496B61ACBF78F00BDA6AA /* style.css */,
+				A37496B21ACBEDED00BDA6AA /* share.html */,
 				7E8E0E821AA74A06007D492B /* AppDelegate.h */,
 				7E8E0E831AA74A06007D492B /* AppDelegate.m */,
 				7E8E0E851AA74A06007D492B /* ViewController.h */,
@@ -286,9 +295,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37496B31ACBEDED00BDA6AA /* share.html in Resources */,
 				7E8E0E8A1AA74A06007D492B /* Main.storyboard in Resources */,
+				A37496B71ACBF78F00BDA6AA /* style.css in Resources */,
 				A336AF581AC93ED5002C08D0 /* podfile in Resources */,
 				7E8E0E8F1AA74A06007D492B /* LaunchScreen.xib in Resources */,
+				A37496B51ACBF59A00BDA6AA /* _config.yml in Resources */,
 				7E8E0E8C1AA74A06007D492B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

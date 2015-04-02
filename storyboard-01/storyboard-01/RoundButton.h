@@ -14,4 +14,8 @@ typedef UIView * (^HitTestViewBlock)(CGPoint point, UIEvent *event, BOOL *return
 
 @property (nonatomic, strong) HitTestViewBlock hitTestViewBlock;
 
+@property (nonatomic, assign) IBInspectable CGFloat cornerRadius;
+@property (nonatomic, assign) IBInspectable CGFloat borderWidth;
+@property (nonatomic, strong) IBInspectable UIColor *borderColor;
+
 @end
