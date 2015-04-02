@@ -146,7 +146,7 @@
         <!--下载-->
         <scene sceneID="Owj-sD-Wky">
             <objects>
-                <viewController title="下载" id="FHV-5P-1rz" sceneMemberID="viewController">
+                <viewController title="下载" id="FHV-5P-1rz" customClass="DownLoadViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Ru-6O-xzb"/>
                         <viewControllerLayoutGuide type="bottom" id="Kh7-m2-BZN"/>
@@ -154,7 +154,90 @@
                     <view key="view" contentMode="scaleToFill" id="YVO-la-IFu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wJB-3e-w8D">
+                                <rect key="frame" x="57" y="121" width="206" height="2"/>
+                                <color key="progressTintColor" red="0.16078431369999999" green="0.79607843140000001" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZQ-x1-kQC">
+                                <rect key="frame" x="127" y="158" width="66" height="30"/>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="开始">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadFile:" destination="FHV-5P-1rz" eventType="touchUpInside" id="paC-Sp-gJ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eil-ef-1v5">
+                                <rect key="frame" x="127" y="211" width="66" height="30"/>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="暂停">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operationStop:" destination="FHV-5P-1rz" eventType="touchUpInside" id="Lxo-OD-f4t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXj-UK-zG4">
+                                <rect key="frame" x="127" y="261" width="66" height="30"/>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="取消">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operationCancel:" destination="FHV-5P-1rz" eventType="touchUpInside" id="v6F-M2-dax"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVK-Pt-lZr">
+                                <rect key="frame" x="170" y="335" width="123" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="M8h-AB-ljY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2d3-kM-iLi">
+                                <rect key="frame" x="139" y="82" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXD-2e-zQ8">
+                                <rect key="frame" x="34" y="335" width="93" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yCY-65-fT9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VXD-2e-zQ8" firstAttribute="top" secondItem="SXj-UK-zG4" secondAttribute="bottom" constant="44" id="37X-sl-NdR"/>
+                            <constraint firstItem="BVK-Pt-lZr" firstAttribute="leading" secondItem="YVO-la-IFu" secondAttribute="leadingMargin" constant="154" id="8J4-Gh-403"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2d3-kM-iLi" secondAttribute="trailing" constant="119" id="8Rh-mS-4zh"/>
+                            <constraint firstItem="2d3-kM-iLi" firstAttribute="leading" secondItem="YVO-la-IFu" secondAttribute="leadingMargin" constant="123" id="F7N-L4-4D8"/>
+                            <constraint firstItem="wJB-3e-w8D" firstAttribute="leading" secondItem="YVO-la-IFu" secondAttribute="leadingMargin" constant="41" id="HuU-yN-EYQ"/>
+                            <constraint firstItem="wJB-3e-w8D" firstAttribute="top" secondItem="6Ru-6O-xzb" secondAttribute="bottom" constant="57" id="LEx-RG-GUr"/>
+                            <constraint firstItem="2d3-kM-iLi" firstAttribute="top" secondItem="6Ru-6O-xzb" secondAttribute="bottom" constant="18" id="Rhb-JS-nih"/>
+                            <constraint firstItem="hZQ-x1-kQC" firstAttribute="top" secondItem="wJB-3e-w8D" secondAttribute="bottom" constant="35" id="Vy0-wl-Zj6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BVK-Pt-lZr" secondAttribute="trailing" constant="11" id="XKV-lR-JDd"/>
+                            <constraint firstItem="hZQ-x1-kQC" firstAttribute="trailing" secondItem="SXj-UK-zG4" secondAttribute="trailing" id="aWv-Td-XPU"/>
+                            <constraint firstItem="hZQ-x1-kQC" firstAttribute="leading" secondItem="YVO-la-IFu" secondAttribute="leadingMargin" constant="111" id="byR-ZO-yne"/>
+                            <constraint firstItem="hZQ-x1-kQC" firstAttribute="trailing" secondItem="Eil-ef-1v5" secondAttribute="trailing" id="cMT-Iv-Nyh"/>
+                            <constraint firstItem="hZQ-x1-kQC" firstAttribute="leading" secondItem="SXj-UK-zG4" secondAttribute="leading" id="cgN-WZ-rqd"/>
+                            <constraint firstItem="SXj-UK-zG4" firstAttribute="top" secondItem="Eil-ef-1v5" secondAttribute="bottom" constant="20" id="dZL-BT-Ohu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VXD-2e-zQ8" secondAttribute="trailing" constant="177" id="iak-P0-oWG"/>
+                            <constraint firstItem="VXD-2e-zQ8" firstAttribute="leading" secondItem="YVO-la-IFu" secondAttribute="leadingMargin" constant="18" id="peH-SD-jRh"/>
+                            <constraint firstItem="hZQ-x1-kQC" firstAttribute="leading" secondItem="Eil-ef-1v5" secondAttribute="leading" id="pf1-Ab-X3i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wJB-3e-w8D" secondAttribute="trailing" constant="41" id="rfo-RH-R61"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hZQ-x1-kQC" secondAttribute="trailing" constant="111" id="tTa-v0-47T"/>
+                            <constraint firstItem="Eil-ef-1v5" firstAttribute="top" secondItem="hZQ-x1-kQC" secondAttribute="bottom" constant="23" id="uOs-Sz-bL6"/>
+                            <constraint firstItem="BVK-Pt-lZr" firstAttribute="top" secondItem="VXD-2e-zQ8" secondAttribute="top" id="x6F-zR-RfH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IPp-nh-QOG">
                         <barButtonItem key="leftBarButtonItem" systemItem="trash" id="fM3-az-WK4">
@@ -168,6 +251,12 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="title" value="下载"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="precentProgress" destination="2d3-kM-iLi" id="d54-RL-09e"/>
+                        <outlet property="precentSizeLabel" destination="BVK-Pt-lZr" id="fYj-sF-M9G"/>
+                        <outlet property="progress" destination="wJB-3e-w8D" id="BJf-Ls-b6Y"/>
+                        <outlet property="speedLabel" destination="VXD-2e-zQ8" id="C5o-8Y-h4x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1m-Co-s3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Orv-Ut-Lap" userLabel="Exit" sceneMemberID="exit"/>

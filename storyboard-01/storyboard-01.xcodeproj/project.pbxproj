@@ -32,6 +32,9 @@
 		A30DFFDE1ACD123D00A44231 /* UIViewController+Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFCC1ACD123D00A44231 /* UIViewController+Logging.m */; };
 		A30DFFDF1ACD123D00A44231 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFCE1ACD123D00A44231 /* ViewController.m */; };
 		A30DFFE21ACD124C00A44231 /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFE11ACD124C00A44231 /* DownLoadViewController.m */; };
+		A30DFFE51ACD175200A44231 /* LLFileDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFE41ACD175200A44231 /* LLFileDownLoader.m */; };
+		A30DFFE81ACD17F400A44231 /* LLFileSingleDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFE71ACD17F400A44231 /* LLFileSingleDownloader.m */; };
+		A30DFFEB1ACD1B1900A44231 /* LLMultiDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFEA1ACD1B1900A44231 /* LLMultiDownloader.m */; };
 		A336AF581AC93ED5002C08D0 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = A336AF571AC93ED5002C08D0 /* podfile */; };
 		A37496B31ACBEDED00BDA6AA /* share.html in Resources */ = {isa = PBXBuildFile; fileRef = A37496B21ACBEDED00BDA6AA /* share.html */; };
 		A37496B51ACBF59A00BDA6AA /* _config.yml in Resources */ = {isa = PBXBuildFile; fileRef = A37496B41ACBF59A00BDA6AA /* _config.yml */; };
@@ -82,7 +85,6 @@
 		A30DFFBD1ACD123D00A44231 /* NSArray+ForwardingIteration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ForwardingIteration.m"; sourceTree = "<group>"; };
 		A30DFFBE1ACD123D00A44231 /* PopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTableViewController.h; sourceTree = "<group>"; };
 		A30DFFBF1ACD123D00A44231 /* PopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTableViewController.m; sourceTree = "<group>"; };
-		A30DFFC01ACD123D00A44231 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A30DFFC11ACD123D00A44231 /* RoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundButton.h; sourceTree = "<group>"; };
 		A30DFFC21ACD123D00A44231 /* RoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundButton.m; sourceTree = "<group>"; };
 		A30DFFC31ACD123D00A44231 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -99,8 +101,14 @@
 		A30DFFCE1ACD123D00A44231 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A30DFFE01ACD124C00A44231 /* DownLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
 		A30DFFE11ACD124C00A44231 /* DownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
+		A30DFFE31ACD175200A44231 /* LLFileDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLFileDownLoader.h; sourceTree = "<group>"; };
+		A30DFFE41ACD175200A44231 /* LLFileDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLFileDownLoader.m; sourceTree = "<group>"; };
+		A30DFFE61ACD17F400A44231 /* LLFileSingleDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLFileSingleDownloader.h; sourceTree = "<group>"; };
+		A30DFFE71ACD17F400A44231 /* LLFileSingleDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLFileSingleDownloader.m; sourceTree = "<group>"; };
+		A30DFFE91ACD1B1900A44231 /* LLMultiDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLMultiDownloader.h; sourceTree = "<group>"; };
+		A30DFFEA1ACD1B1900A44231 /* LLMultiDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLMultiDownloader.m; sourceTree = "<group>"; };
+		A30DFFEC1ACD1F7A00A44231 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A336AF571AC93ED5002C08D0 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
-		A35ECA371AC4EFE500CDE93F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A37496B21ACBEDED00BDA6AA /* share.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = share.html; path = ../../../../blog/blog_/Lance201314.github.io/_includes/share.html; sourceTree = "<group>"; };
 		A37496B41ACBF59A00BDA6AA /* _config.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = _config.yml; path = ../../../../blog/blog_/Lance201314.github.io/_config.yml; sourceTree = "<group>"; };
 		A37496B61ACBF78F00BDA6AA /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = ../../../../blog/blog_/Lance201314.github.io/assets/css/style.css; sourceTree = "<group>"; };
@@ -165,9 +173,9 @@
 		7E8E0E7E1AA74A06007D492B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A30DFFEC1ACD1F7A00A44231 /* PrefixHeader.pch */,
 				7E8E0E7F1AA74A06007D492B /* Info.plist */,
 				7E8E0E801AA74A06007D492B /* main.m */,
-				A35ECA371AC4EFE500CDE93F /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,7 +221,6 @@
 				A30DFFBD1ACD123D00A44231 /* NSArray+ForwardingIteration.m */,
 				A30DFFBE1ACD123D00A44231 /* PopTableViewController.h */,
 				A30DFFBF1ACD123D00A44231 /* PopTableViewController.m */,
-				A30DFFC01ACD123D00A44231 /* PrefixHeader.pch */,
 				A30DFFC11ACD123D00A44231 /* RoundButton.h */,
 				A30DFFC21ACD123D00A44231 /* RoundButton.m */,
 				A30DFFC31ACD123D00A44231 /* SecondViewController.h */,
@@ -237,6 +244,12 @@
 			children = (
 				A30DFFE01ACD124C00A44231 /* DownLoadViewController.h */,
 				A30DFFE11ACD124C00A44231 /* DownLoadViewController.m */,
+				A30DFFE31ACD175200A44231 /* LLFileDownLoader.h */,
+				A30DFFE41ACD175200A44231 /* LLFileDownLoader.m */,
+				A30DFFE61ACD17F400A44231 /* LLFileSingleDownloader.h */,
+				A30DFFE71ACD17F400A44231 /* LLFileSingleDownloader.m */,
+				A30DFFE91ACD1B1900A44231 /* LLMultiDownloader.h */,
+				A30DFFEA1ACD1B1900A44231 /* LLMultiDownloader.m */,
 			);
 			path = operation;
 			sourceTree = "<group>";
@@ -358,11 +371,14 @@
 				A30DFFD81ACD123D00A44231 /* PopTableViewController.m in Sources */,
 				A30DFFD71ACD123D00A44231 /* NSArray+ForwardingIteration.m in Sources */,
 				7E8E0E811AA74A06007D492B /* main.m in Sources */,
+				A30DFFE51ACD175200A44231 /* LLFileDownLoader.m in Sources */,
+				A30DFFEB1ACD1B1900A44231 /* LLMultiDownloader.m in Sources */,
 				A30DFFCF1ACD123D00A44231 /* CustomCell.m in Sources */,
 				A30DFFDA1ACD123D00A44231 /* SecondViewController.m in Sources */,
 				A30DFFE21ACD124C00A44231 /* DownLoadViewController.m in Sources */,
 				A30DFFD61ACD123D00A44231 /* MessageInterceptor.m in Sources */,
 				A30DFFDC1ACD123D00A44231 /* TabBarViewController.m in Sources */,
+				A30DFFE81ACD17F400A44231 /* LLFileSingleDownloader.m in Sources */,
 				A30DFFDB1ACD123D00A44231 /* TabBarController.m in Sources */,
 				A30DFFD21ACD123D00A44231 /* DPNormalObject.m in Sources */,
 				A30DFFD31ACD123D00A44231 /* EmptyViewAction.m in Sources */,

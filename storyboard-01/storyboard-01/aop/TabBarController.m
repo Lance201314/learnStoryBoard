@@ -16,18 +16,18 @@
 {
     [super viewDidLoad];
     
-    RoundButton *tabButton = [[RoundButton alloc] initWithFrame:CGRectMake(80, 80, 80.0, 80.0)];
-    tabButton.clipsToBounds = YES;
-    [tabButton addTarget:self action:@selector(test:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:tabButton];
-    
-    EmptyViewAction *translucentView = [[EmptyViewAction alloc] initWithFrame:self.view.bounds];
-    translucentView.backgroundColor = [UIColor redColor];
-    [self.view addSubview:translucentView];
-    
-    // doesn't work , because ,alpha <= 0.1,, hidden, or other
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(testAlphaView)];
-    [translucentView addGestureRecognizer:tapGesture];
+//    RoundButton *tabButton = [[RoundButton alloc] initWithFrame:CGRectMake(80, 80, 80.0, 80.0)];
+//    tabButton.clipsToBounds = YES;
+//    [tabButton addTarget:self action:@selector(test:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:tabButton];
+//    
+//    EmptyViewAction *translucentView = [[EmptyViewAction alloc] initWithFrame:self.view.bounds];
+//    translucentView.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:translucentView];
+//    
+//    // doesn't work , because ,alpha <= 0.1,, hidden, or other
+//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(testAlphaView)];
+//    [translucentView addGestureRecognizer:tapGesture];
 }
 
 - (void)testAlphaView
