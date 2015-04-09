@@ -17,6 +17,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UIView *roatationView;
 
 @end
 
@@ -42,8 +43,20 @@
     return YES;
 }
 - (IBAction)buttonTest:(UIButton *)button {
-    NSLayoutConstraint *constraint = [button getContraintWithFirstAttribute:NSLayoutAttributeHeight firstItem:button view:button];
-    NSLog(@"%f", constraint.constant);
+//    NSLayoutConstraint *constraint = [button getContraintWithFirstAttribute:NSLayoutAttributeHeight firstItem:button view:button];
+//    NSLog(@"%f", constraint.constant);
+    
+    NSLayoutConstraint *leftConstraint = [_roatationView getContraintWithFirstAttribute:NSLayoutAttributeLeading firstItem:_roatationView view:self.view];
+    NSLayoutConstraint *rightConstraint = [_roatationView getContraintWithFirstAttribute:NSLayoutAttributeTrailing firstItem:_roatationView view:self.view];
+    
+    [UIView animateWithDuration:2.0 animations:^{
+        leftConstraint.constant += 160.0;
+        rightConstraint.constant += 160.0;
+        
+        [_roatationView layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField

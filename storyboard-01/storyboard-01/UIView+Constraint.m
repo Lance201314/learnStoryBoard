@@ -80,6 +80,7 @@
             
             break;
         }
+        NSLog(@"%@~~~%ld",constraint.firstItem, constraint.firstAttribute);
     }
     
     return searchConstraint;
