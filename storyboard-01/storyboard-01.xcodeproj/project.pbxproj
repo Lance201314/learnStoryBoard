@@ -35,6 +35,7 @@
 		A30DFFE51ACD175200A44231 /* LLFileDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFE41ACD175200A44231 /* LLFileDownLoader.m */; };
 		A30DFFE81ACD17F400A44231 /* LLFileSingleDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFE71ACD17F400A44231 /* LLFileSingleDownloader.m */; };
 		A30DFFEB1ACD1B1900A44231 /* LLMultiDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFEA1ACD1B1900A44231 /* LLMultiDownloader.m */; };
+		A333C57F1AD6674800AE64B3 /* UIView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A333C57E1AD6674800AE64B3 /* UIView+Constraint.m */; };
 		A336AF581AC93ED5002C08D0 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = A336AF571AC93ED5002C08D0 /* podfile */; };
 		A37496B31ACBEDED00BDA6AA /* share.html in Resources */ = {isa = PBXBuildFile; fileRef = A37496B21ACBEDED00BDA6AA /* share.html */; };
 		A37496B51ACBF59A00BDA6AA /* _config.yml in Resources */ = {isa = PBXBuildFile; fileRef = A37496B41ACBF59A00BDA6AA /* _config.yml */; };
@@ -108,6 +109,8 @@
 		A30DFFE91ACD1B1900A44231 /* LLMultiDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLMultiDownloader.h; sourceTree = "<group>"; };
 		A30DFFEA1ACD1B1900A44231 /* LLMultiDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLMultiDownloader.m; sourceTree = "<group>"; };
 		A30DFFEC1ACD1F7A00A44231 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A333C57D1AD6674800AE64B3 /* UIView+Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraint.h"; sourceTree = "<group>"; };
+		A333C57E1AD6674800AE64B3 /* UIView+Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraint.m"; sourceTree = "<group>"; };
 		A336AF571AC93ED5002C08D0 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
 		A37496B21ACBEDED00BDA6AA /* share.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = share.html; path = ../../../../blog/blog_/Lance201314.github.io/_includes/share.html; sourceTree = "<group>"; };
 		A37496B41ACBF59A00BDA6AA /* _config.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = _config.yml; path = ../../../../blog/blog_/Lance201314.github.io/_config.yml; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 			children = (
 				7E8E0E821AA74A06007D492B /* AppDelegate.h */,
 				7E8E0E831AA74A06007D492B /* AppDelegate.m */,
+				A333C57D1AD6674800AE64B3 /* UIView+Constraint.h */,
+				A333C57E1AD6674800AE64B3 /* UIView+Constraint.m */,
 				A30DFFA91ACD11CD00A44231 /* aop */,
 				A30DFFAA1ACD11CD00A44231 /* operation */,
 				A37496B41ACBF59A00BDA6AA /* _config.yml */,
@@ -382,6 +387,7 @@
 				A30DFFDB1ACD123D00A44231 /* TabBarController.m in Sources */,
 				A30DFFD21ACD123D00A44231 /* DPNormalObject.m in Sources */,
 				A30DFFD31ACD123D00A44231 /* EmptyViewAction.m in Sources */,
+				A333C57F1AD6674800AE64B3 /* UIView+Constraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
