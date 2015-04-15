@@ -564,6 +564,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vqw-Si-T6x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.97254901959999995" green="0.34509803919999998" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="iQl-CL-wnd" kind="relationship" relationship="rootViewController" id="1Cc-TB-crb"/>

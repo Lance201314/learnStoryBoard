@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "CustomCell.h"
+#import "UINavigationBar+BackgroundColor.h"
 
 @interface SecondViewController ()
 {
@@ -123,5 +124,18 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat offsetY = scrollView.contentOffset.y;
+    
+    NSLog(@"%lf", offsetY);
+    
+    if (offsetY > 0) {
+        [self.navigationController.navigationBar ll_setBackgroundColor:[UIColor blueColor]];
+    } else {
+        [self.navigationController.navigationBar ll_setBackgroundColor:[UIColor greenColor]];
+    }
+}
 
 @end

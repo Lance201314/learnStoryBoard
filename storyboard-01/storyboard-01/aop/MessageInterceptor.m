@@ -10,4 +10,9 @@
 
 @implementation MessageInterceptor
 
+- (void)testRunLoop
+{
+    
+}
+
 @end
