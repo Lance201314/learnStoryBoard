@@ -15,6 +15,10 @@
     HitTestView *_testView;
 }
 
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UIView *roatationView;
+
 @end
 
 @implementation HitTestViewController
@@ -23,13 +27,58 @@
 {
     [super viewDidLoad];
     
-    _testView = [[HitTestView alloc] initWithFrame:CGRectMake(20.0, 20.0, CGRectGetWidth(self.view.frame) - 20 * 2, 300.0)];
-    [self.view addSubview:_testView];
+//    _testView = [[HitTestView alloc] initWithFrame:CGRectMake(20.0, 20.0, CGRectGetWidth(self.view.frame) - 20 * 2, 300.0)];
+//    [self.view addSubview:_testView];
+//    
+//    TestHitView *testView = [[TestHitView alloc] initWithFrame:CGRectMake(60.0, 350.0, 100.0, 100)];
+//    testView.backgroundColor = [UIColor redColor];
+//    testView.alpha = 0.0;
+//    [self.view addSubview:testView];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
     
-    TestHitView *testView = [[TestHitView alloc] initWithFrame:CGRectMake(60.0, 350.0, 100.0, 100)];
-    testView.backgroundColor = [UIColor redColor];
-    testView.alpha = 0.0;
-    [self.view addSubview:testView];
+    return YES;
+}
+- (IBAction)buttonTest:(UIButton *)button {
+//    NSLayoutConstraint *constraint = [button getContraintWithFirstAttribute:NSLayoutAttributeHeight firstItem:button view:button];
+//    NSLog(@"%f", constraint.constant);
+    
+    NSLayoutConstraint *leftConstraint = [_roatationView getContraintWithFirstAttribute:NSLayoutAttributeLeading firstItem:_roatationView view:self.view];
+    NSLayoutConstraint *rightConstraint = [_roatationView getContraintWithFirstAttribute:NSLayoutAttributeTrailing firstItem:_roatationView view:self.view];
+    
+    [UIView animateWithDuration:2.0 animations:^{
+        leftConstraint.constant += 160.0;
+        rightConstraint.constant += 160.0;
+        
+        [_roatationView layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    NSLayoutConstraint *constraint = [textField getContraintWithFirstAttribute:NSLayoutAttributeBottom firstItem:textField view:self.view];
+    [UIView animateWithDuration:0.35 animations:^{
+        constraint.constant -= 100.0f;
+        [textField layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    NSLayoutConstraint *constraint = [textField getContraintWithFirstAttribute:NSLayoutAttributeBottom firstItem:textField view:self.view];
+    [UIView animateWithDuration:0.35 animations:^{
+        constraint.constant += 100.0f;
+        [textField layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 @end
