@@ -13,7 +13,6 @@
 		7E8E0E8C1AA74A06007D492B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8E0E8B1AA74A06007D492B /* Images.xcassets */; };
 		7E8E0E8F1AA74A06007D492B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8E0E8D1AA74A06007D492B /* LaunchScreen.xib */; };
 		7E8E0E9B1AA74A06007D492B /* storyboard_01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E0E9A1AA74A06007D492B /* storyboard_01Tests.m */; };
-		A30DFFA21ACCF5BA00A44231 /* disqus.html in Resources */ = {isa = PBXBuildFile; fileRef = A30DFFA11ACCF5BA00A44231 /* disqus.html */; };
 		A30DFFCF1ACD123D00A44231 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFAC1ACD123D00A44231 /* CustomCell.m */; };
 		A30DFFD01ACD123D00A44231 /* CustomHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFAE1ACD123D00A44231 /* CustomHitTestView.m */; };
 		A30DFFD11ACD123D00A44231 /* DPDynamicProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFB11ACD123D00A44231 /* DPDynamicProxy.m */; };
@@ -36,9 +35,6 @@
 		A30DFFE81ACD17F400A44231 /* LLFileSingleDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFE71ACD17F400A44231 /* LLFileSingleDownloader.m */; };
 		A30DFFEB1ACD1B1900A44231 /* LLMultiDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFEA1ACD1B1900A44231 /* LLMultiDownloader.m */; };
 		A336AF581AC93ED5002C08D0 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = A336AF571AC93ED5002C08D0 /* podfile */; };
-		A37496B31ACBEDED00BDA6AA /* share.html in Resources */ = {isa = PBXBuildFile; fileRef = A37496B21ACBEDED00BDA6AA /* share.html */; };
-		A37496B51ACBF59A00BDA6AA /* _config.yml in Resources */ = {isa = PBXBuildFile; fileRef = A37496B41ACBF59A00BDA6AA /* _config.yml */; };
-		A37496B71ACBF78F00BDA6AA /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A37496B61ACBF78F00BDA6AA /* style.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +59,6 @@
 		7E8E0E941AA74A06007D492B /* storyboard-01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "storyboard-01Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8E0E991AA74A06007D492B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8E0E9A1AA74A06007D492B /* storyboard_01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = storyboard_01Tests.m; sourceTree = "<group>"; };
-		A30DFFA11ACCF5BA00A44231 /* disqus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = disqus.html; path = ../../../../blog/blog_/Lance201314.github.io/_includes/disqus.html; sourceTree = "<group>"; };
 		A30DFFAB1ACD123D00A44231 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		A30DFFAC1ACD123D00A44231 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		A30DFFAD1ACD123D00A44231 /* CustomHitTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHitTestView.h; sourceTree = "<group>"; };
@@ -109,9 +104,6 @@
 		A30DFFEA1ACD1B1900A44231 /* LLMultiDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLMultiDownloader.m; sourceTree = "<group>"; };
 		A30DFFEC1ACD1F7A00A44231 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A336AF571AC93ED5002C08D0 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
-		A37496B21ACBEDED00BDA6AA /* share.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = share.html; path = ../../../../blog/blog_/Lance201314.github.io/_includes/share.html; sourceTree = "<group>"; };
-		A37496B41ACBF59A00BDA6AA /* _config.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = _config.yml; path = ../../../../blog/blog_/Lance201314.github.io/_config.yml; sourceTree = "<group>"; };
-		A37496B61ACBF78F00BDA6AA /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = ../../../../blog/blog_/Lance201314.github.io/assets/css/style.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,10 +150,6 @@
 				7E8E0E831AA74A06007D492B /* AppDelegate.m */,
 				A30DFFA91ACD11CD00A44231 /* aop */,
 				A30DFFAA1ACD11CD00A44231 /* operation */,
-				A37496B41ACBF59A00BDA6AA /* _config.yml */,
-				A37496B61ACBF78F00BDA6AA /* style.css */,
-				A30DFFA11ACCF5BA00A44231 /* disqus.html */,
-				A37496B21ACBEDED00BDA6AA /* share.html */,
 				7E8E0E881AA74A06007D492B /* Main.storyboard */,
 				7E8E0E8B1AA74A06007D492B /* Images.xcassets */,
 				7E8E0E8D1AA74A06007D492B /* LaunchScreen.xib */,
@@ -334,14 +322,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A37496B31ACBEDED00BDA6AA /* share.html in Resources */,
 				7E8E0E8A1AA74A06007D492B /* Main.storyboard in Resources */,
-				A37496B71ACBF78F00BDA6AA /* style.css in Resources */,
 				A336AF581AC93ED5002C08D0 /* podfile in Resources */,
 				7E8E0E8F1AA74A06007D492B /* LaunchScreen.xib in Resources */,
-				A37496B51ACBF59A00BDA6AA /* _config.yml in Resources */,
 				7E8E0E8C1AA74A06007D492B /* Images.xcassets in Resources */,
-				A30DFFA21ACCF5BA00A44231 /* disqus.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
