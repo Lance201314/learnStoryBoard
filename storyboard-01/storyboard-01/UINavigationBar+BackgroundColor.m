@@ -27,9 +27,9 @@ static char overlayKey;
 {
     if (!self.overlay) {
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-        [self setShadowImage:[UIImage new]];
         
         self.overlay = [[UIView alloc] initWithFrame:CGRectMake(0.0, -20.0, CGRectGetWidth([UIScreen mainScreen].bounds), 64.0)];
+        self.overlay.userInteractionEnabled = NO;
         [self insertSubview:self.overlay atIndex:0];
         
         self.overlay.backgroundColor = backgroundColor;

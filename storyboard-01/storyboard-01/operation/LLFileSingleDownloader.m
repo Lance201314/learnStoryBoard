@@ -38,8 +38,6 @@
     self.conn = [NSURLConnection connectionWithRequest:request delegate:self];
     
     _downloading = YES;
-    
-    NSURLSession
 }
 
 - (void)pause

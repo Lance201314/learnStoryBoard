@@ -13,6 +13,8 @@
 		7E8E0E8C1AA74A06007D492B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8E0E8B1AA74A06007D492B /* Images.xcassets */; };
 		7E8E0E8F1AA74A06007D492B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8E0E8D1AA74A06007D492B /* LaunchScreen.xib */; };
 		7E8E0E9B1AA74A06007D492B /* storyboard_01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8E0E9A1AA74A06007D492B /* storyboard_01Tests.m */; };
+		7EFAE2AE1AECEF830055DA15 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFAE2AD1AECEF830055DA15 /* Observer.m */; };
+		7EFAE2B11AECEFBA0055DA15 /* Poster.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFAE2B01AECEFBA0055DA15 /* Poster.m */; };
 		A30DFFCF1ACD123D00A44231 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFAC1ACD123D00A44231 /* CustomCell.m */; };
 		A30DFFD01ACD123D00A44231 /* CustomHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFAE1ACD123D00A44231 /* CustomHitTestView.m */; };
 		A30DFFD11ACD123D00A44231 /* DPDynamicProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFB11ACD123D00A44231 /* DPDynamicProxy.m */; };
@@ -61,6 +63,10 @@
 		7E8E0E941AA74A06007D492B /* storyboard-01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "storyboard-01Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8E0E991AA74A06007D492B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8E0E9A1AA74A06007D492B /* storyboard_01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = storyboard_01Tests.m; sourceTree = "<group>"; };
+		7EFAE2AC1AECEF830055DA15 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		7EFAE2AD1AECEF830055DA15 /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
+		7EFAE2AF1AECEFBA0055DA15 /* Poster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Poster.h; sourceTree = "<group>"; };
+		7EFAE2B01AECEFBA0055DA15 /* Poster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Poster.m; sourceTree = "<group>"; };
 		A30DFFAB1ACD123D00A44231 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		A30DFFAC1ACD123D00A44231 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		A30DFFAD1ACD123D00A44231 /* CustomHitTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHitTestView.h; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 		7E8E0E7D1AA74A06007D492B /* storyboard-01 */ = {
 			isa = PBXGroup;
 			children = (
+				7EFAE2AB1AECE7910055DA15 /*  notification */,
 				7E8E0E821AA74A06007D492B /* AppDelegate.h */,
 				7E8E0E831AA74A06007D492B /* AppDelegate.m */,
 				A333C57D1AD6674800AE64B3 /* UIView+Constraint.h */,
@@ -193,6 +200,17 @@
 				7E8E0E991AA74A06007D492B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EFAE2AB1AECE7910055DA15 /*  notification */ = {
+			isa = PBXGroup;
+			children = (
+				7EFAE2AC1AECEF830055DA15 /* Observer.h */,
+				7EFAE2AD1AECEF830055DA15 /* Observer.m */,
+				7EFAE2AF1AECEFBA0055DA15 /* Poster.h */,
+				7EFAE2B01AECEFBA0055DA15 /* Poster.m */,
+			);
+			path = " notification";
 			sourceTree = "<group>";
 		};
 		A30DFFA91ACD11CD00A44231 /* aop */ = {
@@ -369,7 +387,9 @@
 				A30DFFE51ACD175200A44231 /* LLFileDownLoader.m in Sources */,
 				A30DFFEB1ACD1B1900A44231 /* LLMultiDownloader.m in Sources */,
 				A30DFFCF1ACD123D00A44231 /* CustomCell.m in Sources */,
+				7EFAE2B11AECEFBA0055DA15 /* Poster.m in Sources */,
 				A30DFFDA1ACD123D00A44231 /* SecondViewController.m in Sources */,
+				7EFAE2AE1AECEF830055DA15 /* Observer.m in Sources */,
 				A30DFFE21ACD124C00A44231 /* DownLoadViewController.m in Sources */,
 				A30DFFD61ACD123D00A44231 /* MessageInterceptor.m in Sources */,
 				A30DFFDC1ACD123D00A44231 /* TabBarViewController.m in Sources */,

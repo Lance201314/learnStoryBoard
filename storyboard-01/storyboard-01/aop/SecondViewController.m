@@ -8,7 +8,8 @@
 
 #import "SecondViewController.h"
 #import "CustomCell.h"
-#import "UINavigationBar+BackgroundColor.h"
+#import "Observer.h"
+//#import "UINavigationBar+BackgroundColor.h"
 
 @interface SecondViewController ()
 {
@@ -31,6 +32,9 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     _rows = 10;
+    
+    __autoreleasing Observer *observer = [[Observer alloc] init];
+    observer.i = 100;
 }
 
 - (IBAction)unwindSegue:(UIStoryboardSegue *)segue
@@ -131,11 +135,11 @@
     
     NSLog(@"%lf", offsetY);
     
-    if (offsetY > 0) {
-        [self.navigationController.navigationBar ll_setBackgroundColor:[UIColor blueColor]];
-    } else {
-        [self.navigationController.navigationBar ll_setBackgroundColor:[UIColor greenColor]];
-    }
+//    if (offsetY > 0) {
+//        [self.navigationController.navigationBar ll_setBackgroundColor:[UIColor blueColor]];
+//    } else {
+//        [self.navigationController.navigationBar ll_setBackgroundColor:[UIColor greenColor]];
+//    }
 }
 
 @end
