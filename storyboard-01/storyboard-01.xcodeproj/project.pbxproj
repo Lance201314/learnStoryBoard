@@ -36,10 +36,7 @@
 		A30DFFEB1ACD1B1900A44231 /* LLMultiDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A30DFFEA1ACD1B1900A44231 /* LLMultiDownloader.m */; };
 		A333C57F1AD6674800AE64B3 /* UIView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A333C57E1AD6674800AE64B3 /* UIView+Constraint.m */; };
 		A336AF581AC93ED5002C08D0 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = A336AF571AC93ED5002C08D0 /* podfile */; };
-<<<<<<< HEAD
-=======
 		A3D7F3381ADCA73D000F8101 /* UINavigationBar+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F3371ADCA73D000F8101 /* UINavigationBar+BackgroundColor.m */; };
->>>>>>> 9bab004f52f4b6f781e6ec83a118ede37991c4af
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,11 +108,8 @@
 		A333C57D1AD6674800AE64B3 /* UIView+Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraint.h"; sourceTree = "<group>"; };
 		A333C57E1AD6674800AE64B3 /* UIView+Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraint.m"; sourceTree = "<group>"; };
 		A336AF571AC93ED5002C08D0 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		A3D7F3361ADCA73D000F8101 /* UINavigationBar+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BackgroundColor.h"; sourceTree = "<group>"; };
 		A3D7F3371ADCA73D000F8101 /* UINavigationBar+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BackgroundColor.m"; sourceTree = "<group>"; };
->>>>>>> 9bab004f52f4b6f781e6ec83a118ede37991c4af
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
